@@ -38,9 +38,29 @@ def EvaluateCurrentRange():
 EOL
 map <C-h> :py EvaluateCurrentRange()
 
-syn keyword cTodo TODO FIXME ToDo
+syn keyword Todo TODO FIXME ToDo
 syn keyword Boolean true True false False
+syn keyword ErrorMsg Error ERROR
+highlight ErrorMsg ctermbg = red
 
 " Uses VISUAL to select and toggel commenting on lines using ctrl-c
 " vmap <C-c> <C-R>:s/^/#/g<CR>
+
+" Highlight some python errors
+syn match pythonError "^\s*def\s\+\w\+(.*)\s*$" display
+syn match pythonError "^\s*class\s\+\w\+(.*)\s*$" display
+syn match pythonError "^\s*for\s.*[^:]$" display
+syn match pythonError "^\s*except\s*$" display
+syn match pythonError "^\s*finally\s*$" display
+syn match pythonError "^\s*try\s*$" display
+syn match pythonError "^\s*else\s*$" display
+syn match pythonError "^\s*else\s*[^:].*" display
+syn match pythonError "^\s*if\s.*[^\:]$" display
+syn match pythonError "^\s*except\s.*[^\:]$" display
+syn match pythonError "^\s*while\s.*[^\:]$" display
+syn match pythonError "^\s*return\s.*:$" display
+syn match pythonError "&&" display
+syn match pythonError "||" display
+syn match pythonError "[;]$" display
+syn keyword pythonError do
 
