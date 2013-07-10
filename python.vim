@@ -8,7 +8,7 @@ set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 set omnifunc=pythoncomplete#Complete
 inoremap <Nul> <C-x><C-o>
 
-" autocmd filetype python source ~/.vim/pydoc.vim
+"autocmd filetype python source ~/.vim/pydoc.vim
 
 set formatoptions=cq textwidth=72 foldignore= wildignore+=*.py[co]
 
@@ -44,22 +44,22 @@ syn keyword Boolean true True false False
 " vmap <C-c> <C-R>:s/^/#/g<CR>
 
 " Highlight some python errors
-"syn match pythonError "^\s*def\s\+\w\+(.*)\s*$" display
-"syn match pythonError "^\s*class\s\+\w\+(.*)\s*$" display
-"syn match pythonError "^\s*for\s.*[^:]$" display
-"syn match pythonError "^\s*except\s*$" display
-"syn match pythonError "^\s*finally\s*$" display
-"syn match pythonError "^\s*try\s*$" display
-"syn match pythonError "^\s*else\s*$" display
-"syn match pythonError "^\s*else\s*[^:].*" display
-"syn match pythonError "^\s*if\s.*[^\:]$" display
-"syn match pythonError "^\s*except\s.*[^\:]$" display
-"syn match pythonError "^\s*while\s.*[^\:]$" display
-"syn match pythonError "^\s*return\s.*:$" display
-"syn match pythonError "&&" display
-"syn match pythonError "||" display
-"syn match pythonError "[;]$" display
-"syn keyword pythonError do
-"highlight link pythonError WarningMsg 
+syn match pythonError "^\s*def\s\+\w\+(.*)\s*$" display
+syn match pythonError "^\s*class\s\+\w\+(.*)\s*$" display
+syn match pythonError "^\s*for\s.*[^:]$" display
+syn match pythonError "^\s*except\s*$" display
+syn match pythonError "^\s*finally\s*$" display
+syn match pythonError "^\s*try\s*$" display
+syn match pythonError "^\s*else\s*$" display
+syn match pythonError "^\s*else\s*[^:].*" display
+syn match pythonError "^\s*if\s.*[^\:]$" display
+syn match pythonError "^\s*except\s.*[^\:]$" display
+syn match pythonError "^\s*while\s.*[^\:]$" display
+syn match pythonError "^\s*return\s.*:$" display
+syn match pythonError "&&" display
+syn match pythonError "||" display
+syn match pythonError "[;]$" display
+syn keyword pythonError do
+highlight link pythonError WarningMsg 
 
 set nohlsearch
