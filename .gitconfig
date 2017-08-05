@@ -1,0 +1,10 @@
+[user]
+	name = Kris Harbold
+	email = kris@chartbeat.com
+[core]
+	excludesfile = /Users/kris/.gitignore_global
+[alias]
+	stash-unapply = !git stash show -p | git apply --reverse
+    branch-diff = cherry
+[web]
+	browser = open

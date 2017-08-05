@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/kris/chartbeat/sharknado3/sharknado3'
+let g:netrw_dirhist_2='/Users/kris/light-side/src/components/container'
+let g:netrw_dirhist_3='/Users/kris/chartbeat/frontend_ng/labs/combined_dash/src/actions'
+let g:netrw_dirhist_4='/Users/kris/light-side/src/style-guide/components/containers'
+let g:netrw_dirhist_5='/Users/kris/chartbeat/pychartbeat/services/clients'
+let g:netrw_dirhist_6='/Users/kris/chartbeat/.git/rebase-merge'
+let g:netrw_dirhist_7='/Users/kris/chartbeat/precog/src/python/precog/lib/schemas'
